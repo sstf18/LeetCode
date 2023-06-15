@@ -1,0 +1,68 @@
+27.RemoveElement
+
+Since array is continuely address, cannot directly 
+delete the element. 
+
+定义快慢指针
+
+快指针：寻找新数组的元素 ，新数组就是不含有目标元素的数组
+慢指针：指向更新 新数组下标的位置
+
+344. reverseString
+
+左指针： 0
+右指针： len(s) - 1
+交换： s[left], s[right] = s[right],s[left]
+
+Offer05.ReplaceSpace
+res = list(s) 
+因为字符串是不可变类型，所以操作字符串需要将其转换为列表，因此空间复杂度不可能为O(1)
+res.extend(['']*counter*2)
+左指针： 原始字符串的末尾
+右指针： 拓展后的末尾
+
+151.ReverseWordsAString 
+将字符串拆分为单词，即转换成列表类型
+words = s.split()
+左指针：0
+右指针：len(s) - 1
+
+206.ReverseLinkedList
+cur = head 
+pre = None 
+
+19. RemoveNthNodeFrom
+set dummy_head
+slow = dummy_head
+fast = dummy_head
+but fast move 'n+1' steps ahead 
+
+349. Intersection of two LinkedList
+make sure let listB be longest, if not then switch 
+
+142.LinkedListCycleII
+主要考察两知识点：
+-判断链表是否有环
+    fast: move 2 steps
+    slow: move 1 step 
+-如果有环，如何找到这个环的入口
+    fast = slow, 
+    then, slow = head, 
+    slow ++
+    fast ++ 
+
+15. 3Sum
+set i, left, right 
+for loop for i, then left += 1, right -= 1
+
+18. 4Sum
+n = len(nums)
+set i, j, left, right 
+for loop for i, 
+    for loop for j=i+1, 
+    left = j+1 
+    right = n-1
+
+Thinking: 
+most two pinters used in 'List'
+if we got String, we can transfer into "List"
