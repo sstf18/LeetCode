@@ -7,3 +7,9 @@ Interview Question:
 1. will the elements in stack were continuely stored ?
 A: not continely, they are using different continer 
 
+Queion 239. Sliding Window Maximum
+- create a new pop, push for a queue
+- dequeu is the based implement continer in stack and queue
+
+Question 347. Top K Frequent Elements
+-
