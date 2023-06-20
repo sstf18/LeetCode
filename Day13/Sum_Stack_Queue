@@ -1,0 +1,9 @@
+1. stack and queue are continer not continuely. 
+2. stack and queue could be implement by List, Dequeue, Vector
+3. stack and queue dont have iterator to train the data
+
+
+Interview Question: 
+1. will the elements in stack were continuely stored ?
+A: not continely, they are using different continer 
+
