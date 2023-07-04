@@ -1,0 +1,28 @@
+BackTracking: 
+
+for solving
+ 1. 组合
+
+ 2. 切割
+
+
+ 3. 子集
+
+ 4. 排练
+
+ 5. 棋盘
+
+
+ void backTracking(){
+    if(终止条件){
+        收集结果
+        return      
+    }  
+
+    # 单层搜索
+    for(集合元素集){
+        处理节点
+        递归函数
+        回溯（撤销处理节点）
+    } return
+ }
