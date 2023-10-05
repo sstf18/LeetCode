@@ -1,5 +1,5 @@
 from typing import List
-
+# dp array: dp[i], arrive i-th position, the cost of i-th position is dp[i]
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         dp = [0]*(len(cost)+1)
