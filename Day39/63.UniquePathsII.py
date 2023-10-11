@@ -1,5 +1,9 @@
 from typing import List
 
+# dp arrary: dp[i][j]
+# formula: add a if statement, dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+# dp init: dp[i][0] = 1, dp[0][j] = 1
+# train sequence
 
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
@@ -23,6 +27,7 @@ class Solution:
                 break
         for i in range(1, m):
             for j in range(1, n):
+                # if there's an obstacle at the current cell, the loop skips to the next iteration. 
                 if obstacleGrid[i][j] == 1: 
                     continue
                 dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
